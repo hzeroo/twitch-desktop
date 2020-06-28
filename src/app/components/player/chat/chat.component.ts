@@ -27,6 +27,11 @@ export class ChatComponent implements OnInit {
       );
     });
 
+    /*
+      webview.addEventListener('dom-ready', function () {
+        webview.openDevTools();
+      });
+    */
     webview.addEventListener('did-finish-load', () => {
       const pluginsPromises = [];
 
